@@ -33,22 +33,21 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 Overriding
 public class MouseInput implements MouseInputListener{
 	@Override
-	public void mouseClicked(MouseEvent e) {
-	}
+	public void mouseClicked(MouseEvent e) {}}
   
 Encapsulation
 public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private boolean play = false;
 	private int score = 0;
 	private int level = 1;
-	private int totalBricks = 21;
+	private int totalBricks = 21;}
 	
 Polymorphism
 public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private boolean play = false;
 	private int score = 0;
 	private int level = 1;
-	private int totalBricks = 21;
+	private int totalBricks = 21;}
   
 GUI
 import javax.swing.JFrame;
