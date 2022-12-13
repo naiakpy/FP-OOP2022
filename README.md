@@ -1,5 +1,35 @@
 Nilai-nilai OOP yang diimplementasikan dalam Final Project
 
+Constructor
+public class Gameplay extends JPanel implements KeyListener, ActionListener{
+	private boolean play = false;
+	private int score = 0;
+	private int level = 1;
+	private int totalBricks = 21;
+	private Timer time;
+	private int delay = 8;
+	public static int playerX = 245;
+	private MapGenerator map;
+	private Ball ball;
+	private Menu menu;
+	
+	public static enum STATE{
+		MENU,
+		GAME};
+	
+	public static STATE state = STATE.MENU;
+
+	public Gameplay() {
+		map = new MapGenerator(3,7,0);
+		ball = new Ball(Color.YELLOW);
+		time = new Timer(delay, this);
+		menu = new Menu();
+		time.start();
+		addKeyListener(this);
+		this.addMouseListener(new MouseInput());
+		setFocusable(true);
+		setFocusTraversalKeysEnabled(false);}
+
 Overriding
 public class MouseInput implements MouseInputListener{
 	@Override
