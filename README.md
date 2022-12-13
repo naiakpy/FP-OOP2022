@@ -54,8 +54,7 @@ public class MouseInput implements MouseInputListener{
 			if(my >= 280 && my <= 330) {
 				System.exit(1);
 			}
-		}
-		
+		}	
 	}
   
 Encapsulation (Gameplay.java)
@@ -91,7 +90,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private Menu menu;
 	public static enum STATE{
 		MENU,
-		GAME};}
+		GAME};
   
 GUI (Main.java)
 
