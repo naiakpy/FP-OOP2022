@@ -1,68 +1,20 @@
 Nilai-nilai OOP yang diimplementasikan dalam Final Project
 - Constructor (Gameplay.java)
+![const](https://user-images.githubusercontent.com/114989408/207275836-f80910fe-955b-4e84-bdcc-8f25e47751b5.jpeg)
 
-public class Gameplay extends JPanel implements KeyListener, ActionListener{
-	private boolean play = false;
-	private int score = 0;
-	private int level = 1;
-	private int totalBricks = 21;
-  
 - Overriding (MouseInput.java)
+![overr](https://user-images.githubusercontent.com/114989408/207275871-0f8e0e5a-e201-4ff8-a0da-7a3b73b74c8f.jpeg)
 
-public class MouseInput implements MouseInputListener{
-	@Override
-	public void mouseClicked(MouseEvent e) {
-	}
-  
 - Encapsulation (Gameplay.java)
+![poly, enca](https://user-images.githubusercontent.com/114989408/207275953-8d2b4db7-5728-4c27-9c0d-5c455d88a90b.jpeg)
 
-public class Gameplay extends JPanel implements KeyListener, ActionListener{
-	private boolean play = false;
-	private int score = 0;
-	private int level = 1;
-	private int totalBricks = 21;
-	private Timer time;
-	private int delay = 8;
-	public static int playerX = 245;
-	private MapGenerator map;
-	private Ball ball;
-	private Menu menu;
-	public static enum STATE{
-		MENU,
-		GAME};
-    
-    
+
 - Polymorphism (Gameplay.java)
+![poly, enca](https://user-images.githubusercontent.com/114989408/207275980-50d408a3-f330-4e95-9efe-1f1b53277b90.jpeg)
 
-public class Gameplay extends JPanel implements KeyListener, ActionListener{
-	private boolean play = false;
-	private int score = 0;
-	private int level = 1;
-	private int totalBricks = 21;
-	private Timer time;
-	private int delay = 8;
-	public static int playerX = 245;
-	private MapGenerator map;
-	private Ball ball;
-	private Menu menu;
-	public static enum STATE{
-		MENU,
-		GAME};
-    
-    
 - GUI (Main.java)
-public class Main {
-	public static void main(String[] args) {
-		JFrame obj = new JFrame();
-		obj.setBounds(10,10,700,600);
-		Gameplay gameplay = new Gameplay();
-		obj.setTitle("Breakout Ball");
-		obj.setResizable(false);
-		obj.setVisible(true);
-		obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		obj.add(gameplay);
-	}
-}
+![gui](https://user-images.githubusercontent.com/114989408/207276025-3356b9c2-048c-4b8a-9415-3a631acf687b.jpeg)
+
 
 Referensi: https://github.com/theresianwg/FP-Y-X-G-Gass-PBO-D/tree/main/Final%20Project%20Y%20X%20G%20Gass/src/Brick%20Breaker
 
