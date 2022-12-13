@@ -32,10 +32,31 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 		setFocusTraversalKeysEnabled(false);}
 
 Overriding (MouseInput.java)
-
 public class MouseInput implements MouseInputListener{
+
 	@Override
-	public void mouseClicked(MouseEvent e) {}}
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		int mx = e.getX();
+		int my = e.getY();
+
+		if(mx >= 275 && mx <= 375) {
+			if(my >= 210 && my <= 260) {
+				Gameplay.state = Gameplay.STATE.GAME;
+			}
+		}
+		if(mx >= 275 && mx <= 375) {
+			if(my >= 280 && my <= 330) {
+				System.exit(1);
+			}
+		}
+		
+	}
   
 Encapsulation (Gameplay.java)
 
