@@ -91,7 +91,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private Menu menu;
 	public static enum STATE{
 		MENU,
-		GAME};
+		GAME};}
   
 GUI (Main.java)
 
