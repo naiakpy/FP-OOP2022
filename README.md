@@ -64,15 +64,34 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private boolean play = false;
 	private int score = 0;
 	private int level = 1;
-	private int totalBricks = 21;}
+	private int totalBricks = 21;
+	private Timer time;
+	private int delay = 8;
+	public static int playerX = 245;
+	private MapGenerator map;
+	private Ball ball;
+	private Menu menu;
+	public static enum STATE{
+		MENU,
+		GAME};
 	
 Polymorphism (Gameplay.java)
+
 
 public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private boolean play = false;
 	private int score = 0;
 	private int level = 1;
-	private int totalBricks = 21;}
+	private int totalBricks = 21;
+	private Timer time;
+	private int delay = 8;
+	public static int playerX = 245;
+	private MapGenerator map;
+	private Ball ball;
+	private Menu menu;
+	public static enum STATE{
+		MENU,
+		GAME};
   
 GUI (Main.java)
 
