@@ -1,6 +1,6 @@
 Nilai-nilai OOP yang diimplementasikan dalam Final Project
 
-Constructor
+Constructor (Gameplay.java)
 
 public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private boolean play = false;
@@ -31,13 +31,13 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 		setFocusable(true);
 		setFocusTraversalKeysEnabled(false);}
 
-Overriding
+Overriding (MouseInput.java)
 
 public class MouseInput implements MouseInputListener{
 	@Override
 	public void mouseClicked(MouseEvent e) {}}
   
-Encapsulation
+Encapsulation (Gameplay.java)
 
 public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private boolean play = false;
@@ -45,7 +45,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private int level = 1;
 	private int totalBricks = 21;}
 	
-Polymorphism
+Polymorphism (Gameplay.java)
 
 public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private boolean play = false;
@@ -53,7 +53,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener{
 	private int level = 1;
 	private int totalBricks = 21;}
   
-GUI
+GUI (Main.java)
 
 import javax.swing.JFrame;
 public class Main {
